@@ -1,0 +1,89 @@
+JS
+
+import React from 'react';
+import  ReactDOM  from 'react-dom';
+import './index.css'
+
+let date=new Date();
+date=date.getHours();
+let greet='';
+const css={};
+if(date >=1 && date<12){
+ greet='Good Morning';
+ css.color='green';
+}
+else if(date>=12 && date<19){
+    greet='Good Afternoon';
+    css.color='orange';
+}
+else{
+    greet='Good Night';
+    css.color='black';
+}
+ReactDOM.render(
+    <>
+    <div>
+<h1>Hello Sir, <span style={css}>{greet}</span></h1>,
+</div>
+</>,
+document.getElementById('root')
+);
+
+//Episode 19 se krenge
+
+--------------------------------------------------------
+CSS
+
+body{
+    background-color: #b4f2e1;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0%;
+    font-family: "Josefin Sans",sans-serif;
+}
+div{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -30px;
+}
+h1{
+    padding: 20px 20px;
+    background-color: #ffe9c5;
+    color: #fa9191;
+    border-radius: 20px;
+}
+span{
+    color: #eb6383;
+}
+
+-----------------------------------------
+HTML
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+   
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap" rel="stylesheet">
+    <title>React App</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    
+  </body>
+</html>
+

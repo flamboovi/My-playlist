@@ -1,0 +1,62 @@
+//Creating Element
+
+import React from 'react';
+import ReactDOM  from 'react-dom';
+import App from './App';
+ReactDOM.render(<App/>,document.getElementById('root'));
+
+--------------------------------------
+import React from "react";
+
+function List(){
+    return (
+        <ol>
+      <li>Md</li>
+      <li>Owais</li>
+      <li>Javed</li>
+      <li>RockstarMJ</li>
+  </ol>
+    );
+}
+
+export default List;
+
+--------------------------------------------------
+//Creating Element
+
+import React from 'react';
+
+import Heading from './Heading';
+import Para from './para'
+import List from './OrderedList'
+
+function App(){
+    return(
+    <>
+    <Heading></Heading>
+    <Para></Para>
+    <List></List>
+    <Heading/>
+    <Para/>
+    <List/>
+    </>
+  
+    );
+    }
+
+    export default App;
+--------------------------------------------
+import React from 'react'
+
+function Para(){
+    return <p>This is my world.</p>
+}
+export default Para;
+-------------------------------------
+import React from 'react';
+
+function Heading(){
+    return <h1>My name is Owais</h1>;
+}
+
+export default Heading;

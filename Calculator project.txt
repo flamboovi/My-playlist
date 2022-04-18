@@ -1,0 +1,53 @@
+import React from 'react';
+import * as cal from './Calc';
+
+function App(){
+   return(
+    <>
+    <h2>
+    <ul>
+        <li>The sum of two no is {cal.add(40,4)}</li>
+        <li>The diff of two no is {cal.sub(40,4)}</li>
+        <li>The mult of two no is {cal.mult(40,4)}</li>
+        <li>The div of two no is {cal.div(40,3)}</li>
+    </ul>
+    </h2>
+    </>
+);
+}
+
+export default App;
+
+--------------------------
+
+
+function add(a,b){
+    let sum=a+b;
+    return sum;
+}
+function sub(a,b){
+    let sub=a-b;
+    return sub;
+}
+function mult(a,b){
+    let mult=a*b;
+    return mult;
+}
+function div(a,b){
+    let div=a/b;
+    div=div.toFixed(2);
+    return div;
+}
+
+export {add,sub,mult,div};
+
+------------------------------------
+import React from 'react';
+import  ReactDOM  from 'react-dom';
+
+import App from './App'
+
+
+ReactDOM.render(
+<App/>
+,document.getElementById('root'));

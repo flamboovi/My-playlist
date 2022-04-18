@@ -1,0 +1,139 @@
+
+// import React from 'react';
+// import ReactDOM from 'react-dom';
+// // import './index.css';
+
+// // const arr=['Md','Owais','Javed']
+// // // ReactDOM.render(
+// // // [
+// // // <h1>World of Computer!!!</h1>,
+// // // <p>Like and share</p>,
+// // // <h2>Please Subscribe my channel</h2>,
+// // // <a href='http://instagram.com'>Click here to go to Instagram Page</a>,
+// // // ]
+
+// // // ,document.getElementById('root'));
+
+// // // var h=document.createElement('h1');
+// // // h.innerHTML='Thapa technical';
+// // // document.getElementById('root').appendChild(h);
+
+// // // ReactDOM.render(
+// // //     <React.Fragment>
+// // //     <h1>World to  OVI Computer!!!</h1>,
+// // //     <p>PLease Like and share</p>,
+// // //     <h2>Please Subscribe my channel</h2>,
+// // //     <a href='http://facebook.com'>Click here to go to Facebook Page</a>,
+// // //     </React.Fragment>
+    
+// // //     ,document.getElementById('root'));
+
+// //     ReactDOM.render(
+// //         <>
+// //         <h1>World to  OVI Computer!!!</h1>,
+// //         <p>PLease Like and share</p>,
+// //         <h2>Please Subscribe my channel</h2>,
+// //         <a href='http://facebook.com'>Click here to go to Facebook Page</a>,
+// //         </>
+        
+// //         ,document.getElementById('root'));
+
+// // ReactDOM.render(
+// // <>
+// // <h1> Ovi's Spotify Pick</h1>
+// // <p><strong> Here are the list of my favourite 5 spotify music:</strong> </p>
+// // <ol>
+// //     <li>Meray Pass Tum Ho  <a href='https://open.spotify.com/track/1b4gksr8TMyoyFdwrmPSvY?si=W20nOvI_SeCQpehzh6UtfA&utm_source=whatsapp'>Link</a></li>
+// //     <li>Gardishon ke Maarey Hue Na  <a href='https://open.spotify.com/track/15u6mZTHUZ0zQrjEV0HRIs?si=5DV6q4NmTSSufQj4sdqc9A&utm_source=whatsapp'>Link</a></li>
+// //     <li>Suno Chanda  <a href='https://open.spotify.com/track/7oUEPn4bbEMkjUdpWuRF7I?si=H2o6BitfSr-BjPOKiMlE7Q&utm_source=whatsapp'>Link</a></li>
+// //     <li>Dil Lauta Do  <a href='https://open.spotify.com/track/1VfUpyKz9uN7et8t6Qhe7v?si=LXPl1ZeGQKiHN2L8__40qA&utm_source=whatsapp'>Link</a></li>
+// //     <li>Barsaat ki Dhun  <a href='https://open.spotify.com/track/0IQRRlpomabOlzy39mcmmq?si=0darEaDCTeKECngKcUpwtQ&utm_source=whatsapp'>Link</a></li>
+// // </ol>
+// // </>
+// // ,document.getElementById('root')
+// // );//Episode 11 se start
+// // const fname="Md Owais Javed";
+// // ReactDOM.render(
+// //     <>
+// //     <h1>My name is {fname}</h1>
+// //     <p>My lucky numbers is {2**5}</p>
+// //     <p>My lucky numbers is {Math.floor(Math.random()*100)}</p>
+// //     </>,
+// //     document.getElementById('root')
+// // )
+// // const name="Md Owais Javed"
+// // const currDate=new Date().toLocaleDateString();
+// // const currTime=new Date().toLocaleTimeString();
+// // ReactDOM.render(
+// //     <>
+// // <h1>Hello, My name is {name}</h1>
+// // <p> Cuurent Date is {currDate}</p>
+
+// // <p> Cuurent Date is {currTime}</p>
+// // </>,
+
+// // document.getElementById('root')
+// // );
+// const name='owais'
+// const heading={
+//     color: '#fa9191',
+//     textAlign: 'center',
+//     textTransform: 'capitalize',
+//     fontWeight: 'bold',
+//     textShadow :'0px 2px 4px #ffe9c5',
+//     fontFamily: '"Josefin Sans", sans-serif'
+// }
+
+// const img1='https://picsum.photos/200/300';
+// const img2='https://picsum.photos/201/300';
+// const img3='https://picsum.photos/202/300';
+// const img4='https://picsum.photos/203/300';
+// const img5='https://picsum.photos/204/300';
+// const img6='https://picsum.photos/205/300';
+// const link='https://instagram.com'
+
+// ReactDOM.render(
+//     <>
+    
+// <h1 style={heading}>My name is {name}</h1>
+// <div className='img_div'>
+// <img src={img1} alt="randomimages"/>
+// <img src={img2} alt='randomimages'/>
+
+// <img src={img3} alt='randomimages'/>
+// <img src={img4} alt='randomimages'/>
+// <img src={img5} alt='randomimages'/>
+// <img src={img6} alt='randomimages'/>
+// <a href={link}><img src={img4}  alt='randomimages'/></a>
+// </div>
+// </>
+// ,
+// document.getElementById('root')
+// );
+// //Episode 15 se continue krenge
+
+-------------------------------------------------
+CSS Part
+
+*{margin: 0;
+padding: 0;
+
+box-sizing: border-box;}
+
+.heading{
+    color: #fa9191;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: bold;
+    text-shadow :0px 2px 4px #ffe9c5;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.img_div{
+    display: flex;
+    justify-content: center;
+}
+.img_div img{
+    width: 200px;
+    height: 150px;
+   
+}
